@@ -5,10 +5,10 @@ test-zovmkezpwaiv@example.com
 
 sfdx force:org:create -s -f config/project-scratch-def.json -a appointapp -d 30
 
-# Push Perms for content builder and email template
+## Push Perms for content builder and email template
 sfdx force:source:deploy -u appointapp -m PermissionSet:AppointmentAppPerms
 
-# Assign content builder and email template perms
+## Assign content builder and email template perms
 sfdx force:user:permset:assign -n AppointmentAppPerms -u appointapp
 
 sfdx force:source:push  -u appointapp -f
