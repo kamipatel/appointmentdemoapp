@@ -1,4 +1,4 @@
-# Note: You need Winter'21 org with DevHub enabled
+## Note: You need Winter'21 org with DevHub enabled
 
 sfdx force:config:set apiVersion=50.0
 
