@@ -10,16 +10,19 @@ sfdx force:source:deploy -u appointapp -m PermissionSet:AppointmentAppPerms
 **Assign content builder and email template perms**  
 sfdx force:user:permset:assign -n AppointmentAppPerms -u appointapp
 
+**Push the source code**  
 sfdx force:source:push  -u appointapp -f
 
+**Assign app perms**  
 sfdx force:user:permset:assign -n Appointment_Manager_Permission -u appointapp
 
+**Open the app**  
 sfdx force:org:open -u appointapp
 
-**Create an appointment and email the patient**  
+**Got to Appointment app, create an appointment and email the patient**  
 
 **Change the password**  
 sfdx force:user:password:generate -u appointapp
 
-**On Phone, go to salesforce mobile app and enter**  
+**On Phone, go to salesforce mobile app and scan the QR code from the email**  
 
