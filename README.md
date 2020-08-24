@@ -1,3 +1,5 @@
+# Note: You need Winter'21 org with DevHub enabled
+
 sfdx force:config:set apiVersion=50.0
 
 sfdx force:auth:web:login -d -a myhuborg  "Replace with Your debhub org"  
