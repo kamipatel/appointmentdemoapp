@@ -40,4 +40,8 @@
         <tab>Appointment__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
+    <tabSettings>
+        <tab>CheckIn</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>
