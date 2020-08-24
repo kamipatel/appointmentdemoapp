@@ -1,7 +1,6 @@
 sfdx force:config:set apiVersion=50.0
 
-sfdx force:auth:web:login -d -a myhuborg
-test-zovmkezpwaiv@example.com
+sfdx force:auth:web:login -d -a myhuborg  "Replace with Your debhub org"  
 
 sfdx force:org:create -s -f config/project-scratch-def.json -a appointapp -d 30
 
